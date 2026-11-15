@@ -1,0 +1,65 @@
+==============================================================
+GIT COMMANDS USED DURING THE ASSIGNMENT
+==============================================================
+
+1. git init
+   Initializes a new Git repository in the current directory.
+   Creates the .git folder which tracks all version control data.
+
+2. git status
+   Displays the current state of the working directory and staging area.
+   Shows which files are tracked, untracked, modified, or staged.
+
+3. git add .
+   Stages all new and modified files in the current directory for the next commit.
+   The dot (.) means all files recursively.
+
+4. git add <filename>
+   Stages a specific file for the next commit.
+   Used when you want to commit only certain files (e.g., git add index.html).
+
+5. git commit -m "message"
+   Records the staged changes as a new commit in the repository history.
+   The -m flag allows writing the commit message inline.
+
+6. git branch feature
+   Creates a new branch named "feature" based on the current branch.
+   Does not switch to the new branch automatically.
+
+7. git checkout feature
+   Switches the working directory to the "feature" branch.
+   Updates files in the working directory to match the branch.
+
+8. git checkout master
+   Switches back to the "master" branch.
+   The working directory is updated to reflect the master branch state.
+
+9. git branch
+   Lists all local branches in the repository.
+   The current branch is highlighted with an asterisk (*).
+
+10. git merge feature
+    Merges the "feature" branch into the current branch (master).
+    Combines the commit history and changes from the feature branch.
+
+11. git log --oneline --graph --all
+    Displays the commit history in a compact one-line-per-commit format.
+    The --graph flag shows branch structure, --all shows all branches.
+
+12. git log --all
+    Displays the full detailed commit history for all branches.
+    Shows commit hash, author, date, and full commit message.
+
+13. git reset --soft HEAD~1
+    Undoes the last commit but keeps the changes staged.
+    HEAD~1 refers to one commit before the current HEAD.
+
+14. git remote add origin <URL>
+    Connects the local repository to a remote GitHub repository.
+    "origin" is the conventional name for the primary remote.
+
+15. git push -u origin master
+    Pushes the local master branch to the remote repository.
+    The -u flag sets the upstream tracking reference for future pushes.
+
+==============================================================
